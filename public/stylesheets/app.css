@@ -1,0 +1,107 @@
+#body-clr {
+    background-color: rgba(58, 145, 136, 0.03);
+}
+
+#cluster-map {
+    width: 100%;
+    height: 500px;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+#index-btn {
+    background-color: rgba(47, 79, 80, 0.9);
+    color: white;
+}
+
+#index-btn:hover {
+    font-weight: 600;
+}
+
+
+#index-card {
+    border-color: rgba(199, 0, 57, 1);
+}
+
+.index-imgs {
+    width: 100%;
+    height: 280px;
+    object-fit: cover
+}
+
+.img-thumbnail {
+    width: 16%;
+    height: 100px;
+    object-fit: cover
+}
+
+#show-username {
+    color: #426e70;
+    font-weight: 700;
+}
+
+#show-campname {
+    color: #2f4f50;
+}
+
+.carousel-img {
+    height: 400px;
+    object-fit: cover
+}
+
+.lines {
+    border-color: rgba(47, 79, 80, 0.25);
+}
+
+.map-campnames {
+    color: rgba(47, 79, 80, 1);
+}
+
+#website-link {
+    text-decoration: none;
+    color: #2f4f50;
+}
+
+.about-text {
+    font-size: large;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(47, 79, 80, 0.4);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.3em;
+    color: #426e70;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(47, 79, 80, 1);
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: #426e70;
+    font-size: 1.6em;
+    font-family: FreeMono, monospace, serif;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: rgba(47, 79, 80, 1);
+}
+
+.footer {
+    background-color: white;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgba(47, 79, 80, 0.4);
+    color: #426e70;
+    font-weight: 500;
+}
+
