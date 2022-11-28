@@ -14,7 +14,8 @@ const LocalStrategy = require('passport-local');                    //gia epilog
 const User = require('./models/user');                              //require tou user schema
 const mongoSanitize = require('express-mongo-sanitize');
 //const helmet = require('helmet');
-const dbUrl = process.env.DB_URL || '//mongodb://localhost:27017/yelp-camp';
+atlasURL=`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.8fathwg.mongodb.net/?retryWrites=true&w=majority`
+const dbUrl = atlasURL || '//mongodb://localhost:27017/yelp-camp';
 const MongoDBStore = require("connect-mongo")(session);     //prosoxi! douleuvei me to version 3 connect-mongo mono
 
 const userRoutes = require('./routes/users');                       //require ta routes apo router
@@ -22,7 +23,7 @@ const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
 
-mongoose.connect(dbUrl, {           //syndesi stin vash->
+mongoose.connect(atlasURL, {           //syndesi stin vash->
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
@@ -50,7 +51,7 @@ app.use(mongoSanitize());    //gia asfaleia sto req.query wste o xristis na min 
 const secret = process.env.SECRET || 'manilla'; //to session secret 
 
 const store = new MongoDBStore({  //auto apotelei to storage twn session mas, doulevei me to connect-mongo version 3 mono!!
-    url: dbUrl,
+    url: atlasURL,
     secret,
     touchAfter: 24 * 60 * 60
 });
