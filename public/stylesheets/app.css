@@ -82,8 +82,29 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(47, 79, 80, 1);
-    font-weight: 500;
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color:#00684a;;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-light .navbar-nav .nav-link::after {
+        display: none;
+    }
 }
 
 .navbar-light .navbar-brand {
