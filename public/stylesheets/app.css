@@ -78,11 +78,12 @@
 
 .navbar-light .navbar-nav .nav-link {
     font-size: 1.3em;
-    color: #426e70;
+    color: rgba(63, 62, 66, 1);
+    position: relative;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: black;
+   color: black;
 }
 
 .navbar-light .navbar-nav .nav-link::after {
