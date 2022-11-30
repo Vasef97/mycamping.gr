@@ -1,5 +1,13 @@
+/*poly anoixto prasino    rgba(77, 179, 61, 1); */
+/*anoixto skouro prasino     rgba(63, 160, 55, 1); */
+/*prasino*               rgba(0, 128, 0,1) */
+/*anoixto gri        rgba(232, 231, 213, 1); */
+/*skouro gri         rgba(63, 62, 66, 1); */
+/*gri                rgba(193, 190, 188, 1); */
+
 #body-clr {
-    background-color: rgba(58, 145, 136, 0.03);
+    background-color: rgba(232, 231, 213, 0.3);
+    color: rgba(128, 128, 128, 1)
 }
 
 #cluster-map {
@@ -13,7 +21,7 @@
 }
 
 #index-btn {
-    background-color: rgba(47, 79, 80, 0.9);
+    background-color: #00684a;
     color: white;
 }
 
@@ -39,12 +47,12 @@
 }
 
 #show-username {
-    color: #426e70;
+    color: rgba(0, 104, 74, 1);
     font-weight: 700;
 }
 
 #show-campname {
-    color: #2f4f50;
+    color: rgba(0, 104, 74, 1);
 }
 
 .carousel-img {
@@ -53,7 +61,7 @@
 }
 
 .lines {
-    border-color: rgba(47, 79, 80, 0.25);
+    border-color: rgba(0, 104, 74, 0.2);
 }
 
 .map-campnames {
@@ -83,16 +91,17 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-   color: black;
+    color: rgba(0, 104, 74, 1);
+    font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link::after {
     content: '';
     opacity: 0;
     transition: all 0.2s;
-    height: 2px;
+    height: 3px;
     width: 100%;
-    background-color:#00684a;;
+    background-color: rgba(128, 128, 128, 0.6);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -106,16 +115,23 @@
     .navbar-light .navbar-nav .nav-link::after {
         display: none;
     }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: rgba(128, 128, 128, 0.1);
+        font-weight: 500;
+        color: rgba(0, 104, 74, 1);
+    }
 }
 
 .navbar-light .navbar-brand {
-    color: #426e70;
+    color: rgba(0, 104, 74, 1);
     font-size: 1.6em;
     font-family: FreeMono, monospace, serif;
 }
 
 .navbar-light .navbar-brand:hover {
-    color: rgba(47, 79, 80, 1);
+    font-weight: 600;
+    color: rgba(0, 104, 74, 1);
 }
 
 .footer {
@@ -123,7 +139,9 @@
     border-top-style: solid;
     border-width: 1px;
     border-color: rgba(47, 79, 80, 0.4);
-    color: #426e70;
-    font-weight: 500;
+    color: rgba(0, 104, 74, 1);
+    font-weight: 600;
+    font-size: 0.9em;
+    opacity: 0.9;
 }
 

@@ -9,7 +9,7 @@ const map = new mapboxgl.Map({
 map.addControl(new mapboxgl.NavigationControl());  //gia controls panw deksia ston xarth
 
 
-new mapboxgl.Marker()       //gia na emfanistei marker sto map mas, apo mapbox docs
+new mapboxgl.Marker({ "color": "#00a35c" })       //gia na emfanistei marker sto map mas, apo mapbox docs
     .setLngLat(campground.geometry.coordinates)
     .setPopup(                         //gia na mas emfanistoun plirofories gia to location tou marker, vazoume Popup
         new mapboxgl.Popup({ offset: 25 })

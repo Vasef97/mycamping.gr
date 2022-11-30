@@ -34,11 +34,11 @@ map.on('load', () => {                  //dhmiourgia tou map
             'circle-color': [
                 'step',
                 ['get', 'point_count'],
-                '#426e70',
+                '#00a35c',
                 2,
-                '#2f4f50',
+                '#00684a',
                 5,
-                '#2f4f50'
+                '#00684a'
             ],
             'circle-radius': [
                 'step',
@@ -73,7 +73,7 @@ map.on('load', () => {                  //dhmiourgia tou map
         source: 'campgrounds',
         filter: ['!', ['has', 'point_count']],
         paint: {
-            'circle-color': '#426e70',
+            'circle-color': '#00a35c',
             'circle-radius': 10,
             'circle-stroke-width': 1,
             'circle-stroke-color': '#fff'
