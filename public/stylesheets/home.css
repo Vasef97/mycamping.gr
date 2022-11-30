@@ -12,31 +12,27 @@ body {
     max-width: 60vw;
 }
 
-.nav-link {
-    padding: 0.25rem 0;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.5);
-    margin-left: 1rem;
-    border-bottom: 0.25rem solid transparent;
-}
-
-.nav-link:hover {
-    color: rgba(255, 255, 255, 0.5);
-    border-bottom-color: rgba(255, 255, 255, 0.5);
-}
-
-.nav-link.active {
-    color: white;
-    border-bottom-color: white;
-
-}
-
 .btn-secondary,
 .btn-secondary:hover {
     color: #333;
     text-shadow: none;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(0, 104, 74, 1);
+}
+
+.btn-secondary:hover {
+    text-shadow: 0 0 1px rgba(33, 33, 33, 1);
 }
 
 .brand-css {
+    color: white;
     font-family: FreeMono, monospace, serif;
+    -webkit-text-stroke: 1.5px rgba(0, 104, 74, 1);
+}
+
+@media only screen and (max-width: 992px) {
+    .brand-css {
+        -webkit-text-stroke: 1px rgba(0, 104, 74, 1);
+    }
 }
