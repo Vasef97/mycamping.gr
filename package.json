@@ -32,4 +32,9 @@
     "passport-local-mongoose": "^7.1.2",
     "sanitize-html": "^2.7.3"
   }
+  {
+  "engines": {
+    "node": ">=14.20.1"
+  }
+}
 }
