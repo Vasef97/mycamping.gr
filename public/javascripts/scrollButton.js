@@ -5,15 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollToTop();
     });
 
-    function scrollToTop() {
-        var scrollStep = -window.scrollY / (30 / 15);
-        var scrollInterval = setInterval(function () {
-            if (window.scrollY !== 0) {
-                window.scrollBy(0, scrollStep);
-            } else {
-                clearInterval(scrollInterval);
-            }
-        }, 15);
+     function scrollToTop() {
+        var scrollOptions = {
+            top: 0,
+            behavior: 'smooth' // Use smooth scrolling
+        };
+    
+        window.scrollTo(scrollOptions);
     }
 });
 
