@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollToTop();
     });
 
+       // Touch events for mobile browsers
+    scrollToTopButton.addEventListener('touchstart', function (event) {
+        event.preventDefault(); // Prevent the default touch behavior
+        scrollToTop();
+    });
+
      function scrollToTop() {
         var scrollOptions = {
             top: 0,
