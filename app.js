@@ -23,12 +23,11 @@ const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
 
-mongoose.connect(atlasURL, {           //syndesi stin vash->
+mongoose.connect(dbURL, {           //syndesi stin vash->
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
-    tls: true
+    useFindAndModify: false
 });
 
 const db = mongoose.connection;
