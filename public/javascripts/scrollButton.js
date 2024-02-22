@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function scrollToTop() {
-        var scrollStep = -window.scrollY / (200 / 15);
+        var scrollStep = -window.scrollY / (50 / 15);
         var scrollInterval = setInterval(function () {
             if (window.scrollY !== 0) {
                 window.scrollBy(0, scrollStep);
