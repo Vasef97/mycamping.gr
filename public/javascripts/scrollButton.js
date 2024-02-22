@@ -5,10 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollToTop();
     });
 
-       // Touch events for mobile browsers
-    scrollToTopButton.addEventListener('touchstart', function (event) {
-        event.preventDefault(); // Prevent the default touch behavior
+    // Add touch events for mobile browsers
+    scrollToTopButton.addEventListener('touchstart', function () {
+        scrollToTopButton.classList.add('touch-hover');
         scrollToTop();
+    });
+
+    // Remove touch class after a short delay
+    scrollToTopButton.addEventListener('touchend', function () {
+        setTimeout(function () {
+            scrollToTopButton.classList.remove('touch-hover');
+        }, 100); // Adjust the delay as needed
     });
 
      function scrollToTop() {
