@@ -193,3 +193,38 @@
 .about {
     color: rgba(0, 104, 74, 1);
 }
+
+
+#scroll-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+#scroll-to-top-button {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: rgb(0, 97, 0);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    font-size: 24px;
+}
+
+#scroll-to-top-button:hover {
+    background: rgb(1, 66, 1);
+}
+
+#scroll-to-top-button::before {
+    content: '\2191'; /* Unicode arrow character */
+    font-size: 34px; /* Larger font size */
+    font-weight: bolder; /* Bolder arrow */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
