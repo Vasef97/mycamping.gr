@@ -27,7 +27,8 @@ mongoose.connect(atlasURL, {           //syndesi stin vash->
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    tls: true
 });
 
 const db = mongoose.connection;
