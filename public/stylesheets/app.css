@@ -224,7 +224,7 @@
     font-size: 34px; /* Larger font size */
     font-weight: bolder; /* Bolder arrow */
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
