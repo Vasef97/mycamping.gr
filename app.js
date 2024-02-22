@@ -23,7 +23,7 @@ const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
 
-mongoose.connect(dbURL, {           //syndesi stin vash->
+mongoose.connect(dbUrl, {           //syndesi stin vash->
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
