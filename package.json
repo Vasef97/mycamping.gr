@@ -33,7 +33,7 @@
     "sanitize-html": "^2.7.3"
   },
   "engines": {
-    "node": ">=14.20.1"
+    "node": "20.x"
 }
 }
 
